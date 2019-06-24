@@ -8,4 +8,5 @@ RUN apk add --update --no-cache git make findutils gcc musl-dev \
 	&& go get golang.org/x/sys/unix \
   && go get golang.org/x/net/... \
 	&& go get golang.org/x/text/... \
-	&& go get golang.org/x/crypto/...
+	&& go get golang.org/x/crypto/... \
+	&& go get github.com/gogo/protobuf/...
