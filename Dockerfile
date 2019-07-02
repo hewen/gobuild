@@ -9,5 +9,7 @@ RUN apk add --update --no-cache git make findutils gcc musl-dev \
         && go get golang.org/x/net/... \
 	&& go get golang.org/x/text/... \
 	&& go get golang.org/x/crypto/... \
-	&& go get github.com/golang/protobuf/proto \
+	&& go get google.golang.org/genproto/... \
+	&& go get google.golang.org/grpc
+	&& go get github.com/golang/protobuf/{proto,protoc-gen-go} \
 	&& go get github.com/gogo/protobuf/...
