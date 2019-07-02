@@ -12,4 +12,5 @@ RUN apk add --update --no-cache git make findutils gcc musl-dev \
 	&& go get google.golang.org/genproto/... \
 	&& go get google.golang.org/grpc \
 	&& go get github.com/golang/protobuf/... \
-	&& go get github.com/gogo/protobuf/...
+	&& go get github.com/gogo/protobuf/... \
+	&& go get github.com/aliyun/alibaba-cloud-sdk-go/...
