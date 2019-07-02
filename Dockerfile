@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-RUN apk add --update --no-cache git make findutils gcc musl-dev \
+RUN apk add --update --no-cache git openssh make findutils gcc musl-dev \
 	&& go get github.com/wadey/gocovmerge \
 	&& go get github.com/spf13/cobra \
 	&& go get github.com/spf13/viper \
